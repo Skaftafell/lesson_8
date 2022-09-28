@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+@font-face {
+   font-family: "ArthurHill";
+   src: url("../fonts/ArthurHillRegular.woff2") format("woff2"), url("../fonts/ArthurHillRegular.woff") format("woff");
+   font-display: swap;
+   font-weight: 400;
+   font-style: normal;
+}
+
+body {
+   font-family:"Montserrat", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 1.5;
+   color: #070810;
+   background:url(../image/bg.jpg) 0 0 / cover no-repeat ;
+   
+}
+[class*="__container"]{
+	max-width: 1230px;
+	margin: 0 auto;
+   padding: 25px;
+}
+
+[class*="__title"]{
+   font-family:"ArthurHill", sans-serif;
+   text-align: center;
+   font-size: 55px;
+   color: yellow;
+   background: rgb(2,0,36);
+   background: linear-gradient(86deg, rgba(2,0,36,1) 0%, rgba(9,83,121,0.9051995798319328) 39%, rgba(0,212,255,1) 100%);
+   text-transform: uppercase;
+   margin-bottom: 20px;
+   border-radius: 20% 80% 70% 30% / 37% 54% 46% 63% ;
+	
+}
+
+[class*="__text"],
+[class*="__item"]
+{
+	color:#13151c;
+   display: block;
+	background-color:aqua;
+   max-width: 700px;
+   padding-left: 15px;
+   margin: 0 auto;
+   border: 1px solid black;
+   border-radius: 5px;
+   transition: all 0.5s ease;
+}
+
+
+
+
+/* =========HOMEWORK========== */
+.hw {
+   background-color:blanchedalmond;
+   max-width: 810px;
+   margin: 40px auto;
+}
+
+.pc__hover,
+.pc__activ,
+.pc__visited,
+.pc__focus,
+.pc__target {
+   max-width: 700px;
+   margin: 0 auto;
+   display: block;
+   border: 2px solid black;
+   border-radius: 5px;
+   align-items: center;
+   background-color:aqua;
+   margin-bottom: 20px;
+   padding-left: 20px;
+}
+
+.pc__hover:hover {
+   color: blue;
+}
+
+.pc__activ:active {
+   color: red;
+}
+
+.pc__visited:visited {
+   color: green;
+}
+
+.pc__focus:focus {
+   border: 2px solid red;
+}
+
+#lor {
+   color:rgb(1, 13, 9);
+   border: 2px solid red;
+   max-width: 500px;
+   margin: 0 auto;
+   opacity: 0;
+   margin-bottom: 30px;
+}
+
+#lor:target {
+   opacity: 1;
+}
+
+.pcp__text {
+   margin-bottom: 20px;
+}
+
+.pcp .pcp__text:last-child{
+	text-transform: uppercase;
+   color: red;
+}
+
+.pcp .pcp__text:nth-child(2){
+	background-color: #0ba708;
+   color: wheat;
+}
+
+ul li::before{
+   content: "";
+	background: url('../image/star.svg') 0 0 no-repeat;
+	border: 2px solid red;
+	width: 20px;
+	height:20px;
+	display:inline-block;
+	margin-right: 10px;
+	transition: all 0.8s ease 0s;
+}
+
+ul li::after{
+   content: "";
+	background: url('../image/tips.svg') 0 0 no-repeat;
+	border: 2px solid rgb(0, 255, 8);
+	width: 20px;
+	height:20px;
+	display:inline-block;
+	margin-right: 10px;
+	transition: all 0.8s ease 0s;
+}
+
+ul li:hover::before {
+   transform: scale(1.5);
+}
+
+/* ---------button-------- */
+.button-div {
+   margin-bottom: 40px;
+   padding-bottom: 30px;
+ }
+ 
+ .button{
+    display:inline-block;
+    background-color: #04c289;
+    padding: 15px;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 0 #000;
+    transition: all 0.3s ease 0s;
+    
+ }
+ .button:hover{
+   background-color: #097c59;
+    margin-top: 3px;
+    box-shadow: 0 2px 0 #000;
+ }
+ 
+ .button:active{
+    margin-top: 3px;
+    box-shadow: 0 2px 0 #000;
+    background-color: #0661f3;
+    color: rgb(234, 239, 81);
+ }
+ 
+ /* ---------/button-------- */
+
+
+
+
+
+
+
+/* =========/HOMEWORK========== */
